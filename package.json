@@ -1,0 +1,28 @@
+{
+  "name": "Genexa-Repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.5.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-webserver": "^0.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgmuna/genxProj.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rgmuna/genxProj/issues"
+  },
+  "homepage": "https://github.com/rgmuna/genxProj#readme"
+}
