@@ -1,0 +1,226 @@
+// color variables
+$blue-green: #41AECA;
+$green: #7DA940;
+$dark-blue: #00186F;
+$text: #4D4D4D;
+$white: #FFFFFF;
+$off-white: #F7F7F7;
+$border: #E6E6E6;
+$grey: #777777;
+
+
+
+html, body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  height: 100%;
+  color: $text;
+}
+
+.no-padding{
+  padding: 0px;
+}
+
+#landingSection{
+  height: 900px;
+  background-image: url('../assets/img/hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+
+.nav-custom{
+  a{
+    color: $white;
+    opacity: 0.6;
+    padding-bottom: 5px !important;
+    font-size: 12px;
+    padding-top: 40px !important;
+  }
+  a.active{
+    opacity: 1;
+  }
+  li {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    margin-right: 10px;
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+
+  li:after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 3px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease;
+  }
+  li:hover:after {
+      width: 100%;
+      background: $white;
+  }
+
+}
+.navbar-toggle{
+  background-color: $border !important;
+  .icon-bar{
+    background-color: $text;
+  }
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: transparent;
+}
+
+.mainTitle{
+  font-size: 60px;
+  font-weight: bold;
+  text-align: left;
+}
+.subTitle{
+  font-size: 42px;
+  text-align: left;
+}
+
+.verticalAlignItems{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.shopNow{
+  background-color: $green;
+  border-radius: 50px;
+  padding: 15px 50px;
+  border: none;
+  font-size: 12px;
+}
+
+//tiles----------------------------------------
+#helpSection{
+  margin: 80px 0px;
+}
+.helpMainTitle{
+  color: $dark-blue;
+  font-size: 45px;
+  font-weight: 500;
+}
+.media, .media-body{
+  height: 170px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.media-heading{
+  font-weight: 600;
+  color: $dark-blue;
+  font-size: 18px;
+}
+
+.mediaDetails{
+  font-size: 12px;
+}
+
+.tileStyles{
+  margin-top: 40px;
+}
+
+.addShadow{
+  box-shadow: 12px 12px 22px #f4f4f4;
+}
+
+.productMainTitle{
+  font-size: 30px;
+  color: $dark-blue;
+  font-weight: normal;
+}
+
+.productMainSub{
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.productTitle{
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: $dark-blue;
+  font-weight: normal;
+}
+
+.productCaption{
+  color: $text;
+  font-size: 12px;
+}
+
+.productBtn{
+  flex: 1 1 auto;
+  font-size: 12px;
+  padding: 10px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, $dark-blue 0%, $blue-green 100%);
+}
+
+.productBtn:hover {
+  background-position:  center;
+}
+
+// media queries----------------------------------------------------------------
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+
+}
+@media (min-width: 576px) {
+  #landingSection{
+    height:448px;
+  }
+}
+@media (max-width: 768px) {
+  .shopBtnContainer, .mainTitle, .subTitle{
+    text-align: center;
+  }
+  .mainTitle{
+    font-size: 48px;
+  }
+  .subTitle{
+    font-size: 30px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #landingSection{
+    height:554px;
+  }
+  .container{
+      max-width: 850px;
+  }
+  .mainTitle, .subTitle, .shopBtnContainer{
+    text-align: left;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  #landingSection{
+    height: 750px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
