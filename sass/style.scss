@@ -133,7 +133,13 @@ html, body {
 }
 
 .addShadow{
+  -moz-box-shadow: 12px 12px 22px #f4f4f4;
+  -webkit-box-shadow: 12px 12px 22px #f4f4f4;
   box-shadow: 12px 12px 22px #f4f4f4;
+}
+
+#productsSection{
+  margin-bottom: 80px;
 }
 
 .productMainTitle{
@@ -178,6 +184,46 @@ html, body {
   background-position:  center;
 }
 
+#getStartedSection{
+  background-color: $off-white;
+  padding-bottom: 120px;
+  .productBtn{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    background-image: linear-gradient(to right, $dark-blue 0%, $blue-green 50%);
+
+  }
+}
+
+.startedTitle{
+  color: $dark-blue;
+  font-size: 24px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.emailInput{
+  font-size: 12px;
+  color: $text;
+  border-radius: 20px;
+  width: 400px;
+  padding: 10px 20px;
+  border: none;
+  -moz-box-shadow: 0 0 20px #ddd;
+  -webkit-box-shadow: 0 0 20px #ddd;
+  box-shadow: 0 0 20px #ddd;
+}
+
+::placeholder{
+  color: $border;
+}
+
+
+footer{
+  background: linear-gradient(to right, $dark-blue, $blue-green);
+  height: 120px;
+}
 // media queries----------------------------------------------------------------
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
