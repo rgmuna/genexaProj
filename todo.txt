@@ -1,5 +1,0 @@
-- fix gradient on final submit button
-- fix responsive menu
-- add verification to email
-- check more cross browser
-- JS check
