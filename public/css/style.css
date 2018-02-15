@@ -185,7 +185,7 @@ footer {
 
 @media (max-width: 768px) {
   #landingSection {
-    height: 448px; }
+    height: 600px; }
   .navbar-nav {
     text-align: center; }
   .nav-custom a {
