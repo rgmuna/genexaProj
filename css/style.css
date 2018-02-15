@@ -1,5 +1,5 @@
 html, body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   height: 100%;
   color: #4D4D4D; }
@@ -125,7 +125,7 @@ html, body {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #00186F;
-  font-weight: normal; }
+  font-weight: 500; }
 
 .productCaption {
   color: #4D4D4D;
@@ -134,7 +134,7 @@ html, body {
 .productBtn {
   flex: 1 1 auto;
   font-size: 12px;
-  padding: 10px 30px;
+  padding: 11px 30px;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
@@ -167,10 +167,14 @@ html, body {
   border-radius: 20px;
   width: 400px;
   padding: 10px 20px;
-  border: none;
+  border: 1px solid #FFFFFF;
   -moz-box-shadow: 0 0 20px #ddd;
   -webkit-box-shadow: 0 0 20px #ddd;
   box-shadow: 0 0 20px #ddd; }
+
+.emailInput:focus {
+  border: 1px solid #00186F;
+  outline: none; }
 
 ::placeholder {
   color: #E6E6E6; }
@@ -189,7 +193,33 @@ footer {
   .mainTitle {
     font-size: 48px; }
   .subTitle {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .helpMainTitle {
+    text-align: center;
+    font-size: 35px; }
+  .emailInput {
+    width: 100%; }
+  #getStartedSection .productBtn {
+    margin: 20px 0px; } }
+
+@media (max-width: 768px) {
+  .nav-custom a {
+    text-align: right;
+    color: #FFFFFF;
+    opacity: 0.6;
+    padding-bottom: 5px !important;
+    font-size: 12px;
+    padding-top: 5px !important; }
+  .nav-custom li {
+    display: block; }
+  .nav-custom li:after {
+    content: none; }
+  .nav-custom li:last-child {
+    margin-right: 5px; }
+  .media, .media-body {
+    height: 100px; }
+  .productTiles {
+    margin-bottom: 20px; } }
 
 @media (min-width: 768px) {
   #landingSection {
@@ -197,8 +227,12 @@ footer {
   .container {
     max-width: 850px; }
   .mainTitle, .subTitle, .shopBtnContainer {
-    text-align: left; } }
+    text-align: left; }
+  .helpMainTitle {
+    font-size: 40px; } }
 
 @media (min-width: 992px) {
   #landingSection {
-    height: 750px; } }
+    height: 750px; }
+  .helpMainTitle {
+    font-size: 45px; } }

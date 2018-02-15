@@ -11,7 +11,7 @@ $grey: #777777;
 
 
 html, body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   height: 100%;
   color: $text;
@@ -159,7 +159,7 @@ html, body {
   margin-top: 20px;
   margin-bottom: 20px;
   color: $dark-blue;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .productCaption{
@@ -170,7 +170,7 @@ html, body {
 .productBtn{
   flex: 1 1 auto;
   font-size: 12px;
-  padding: 10px 30px;
+  padding: 11px 30px;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
@@ -209,10 +209,15 @@ html, body {
   border-radius: 20px;
   width: 400px;
   padding: 10px 20px;
-  border: none;
+  border: 1px solid $white;
   -moz-box-shadow: 0 0 20px #ddd;
   -webkit-box-shadow: 0 0 20px #ddd;
   box-shadow: 0 0 20px #ddd;
+}
+
+.emailInput:focus{
+  border: 1px solid $dark-blue;
+  outline: none;
 }
 
 ::placeholder{
@@ -244,6 +249,45 @@ footer{
   .subTitle{
     font-size: 30px;
   }
+  .helpMainTitle{
+    text-align: center;
+    font-size: 35px;
+  }
+  .emailInput{
+    width: 100%;
+  }
+  #getStartedSection .productBtn{
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 768px){
+  .nav-custom{
+    a{
+      text-align: right;
+      color: $white;
+      opacity: 0.6;
+      padding-bottom: 5px !important;
+      font-size: 12px;
+      padding-top: 5px !important;
+    }
+    li {
+      display: block;
+    }
+
+    li:after {
+        content: none;
+    }
+    li:last-child {
+      margin-right: 5px;
+    }
+  }
+  .media, .media-body{
+    height: 100px;
+  }
+  .productTiles{
+    margin-bottom: 20px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -257,6 +301,9 @@ footer{
   .mainTitle, .subTitle, .shopBtnContainer{
     text-align: left;
   }
+  .helpMainTitle{
+    font-size: 40px;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -264,9 +311,7 @@ footer{
   #landingSection{
     height: 750px;
   }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
+  .helpMainTitle{
+    font-size: 45px;
+  }
 }

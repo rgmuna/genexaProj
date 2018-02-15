@@ -33,6 +33,7 @@
 
         <script src="app.js"></script>
         <link href="css/style.css" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
         <!-- no javascript notification -->
         <noscript>For site functionality it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com" target="_blank"> instructions how to enable JavaScript in your web browser</a></noscript>
@@ -110,7 +111,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             </div>
           </div>
-          <div class="col-sm-4 col-xs-12 addShadow" ng-repeat="product in productTiles">
+          <div class="col-sm-4 col-xs-12 addShadow productTiles" ng-repeat="product in productTiles">
             <div class="col-xs-12 no-padding">
               <img class="img-responsive" src="{{product.img}}" alt="">
             </div>
@@ -138,9 +139,17 @@
           <div class="col-xs-12 text-center startedTitle">
             LET'S GET STARTED
           </div>
-          <div class="col-xs-12 text-center" style="margin-top: 20px;">
+          <div class="col-xs-12 text-center hidden-xs" style="margin-top: 20px;">
             <input class="emailInput" type="text" placeholder="Enter your email address" />
             <input class="productBtn" type="submit" value="SUBMIT"/>
+          </div>
+          <div class="col-xs-12 text-center visible-xs" style="margin-top: 20px;">
+            <div class="col-xs-12">
+              <input class="emailInput" type="text" placeholder="Enter your email address" />
+            </div>
+            <div class="col-xs-12">
+              <input class="productBtn" type="submit" value="SUBMIT"/>
+            </div>
           </div>
         </div>
       </section>
